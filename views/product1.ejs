@@ -1,0 +1,128 @@
+<html>
+		<head>
+			<title>SHOPPING WEBSITE</title>
+			  <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"> 
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+			}
+			img{
+				height: 300px;
+                width: 300px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+			body{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+				background-image: url("https://images.pexels.com/photos/986573/pexels-photo-986573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+				background-size: 100%;
+				color:white;
+			}
+			.display-6{
+				animation: blink 6s infinite;
+			  }
+			  @keyframes blink {
+				0% {
+				  opacity: 1;
+				}
+				100% {
+				  opacity: 0;
+				  color: white;
+				}
+			  }
+			  .col:hover{
+				background-image: url("");
+			  }
+		</style>
+        <body>
+			 <div class = "container fluid">
+				<div class = "row" >
+					<div class = "col-lg-1"><i class = "bi bi-list-ul" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-1"><i class = "bi bi-person-circle" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-8"><h2 class = "display-6" style = "font-weight:bold;"> ORGANING PRODUCTS SHOPPING</h2></div>
+					<div class = "col-lg-1"><i class = "bi bi-house-fill" style = "color:green; font-size:45px;"></i></div>
+					<div class = "col-lg-1"><i class = "bi bi-cart4" style = "color:green; font-size:45px;"></i></div>
+				</div><br>
+				<div class = "row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3">
+					<div class = "col"> 
+						<div>
+						<img src = "https://tse2.mm.bing.net/th?id=OIP.hB1VkxqwXRytKsHPvZLzoQHaHa&pid=Api&P=0">
+						<div class = "caption">
+							<p><b>VERMICOMPOST</b><br>
+							Quantity: 500grams</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="999/-"><del><small>1500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value ="VERMICOMPOST">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "VERMICOMPOST">ORDER NOW <i class = "bi bi-basket-fill" ></i></button></form></div>
+					<div class = "col">
+						<div>
+							<img src = "https://mdbiocoals.com/blogs/wp-content/uploads/2022/09/Gypsum-Fertilizer-800x1137.jpg">
+							<div class = "caption" >
+								<p><b>GYPSUM</b><br>
+									
+									Quantity: 22.7kg</p></div>
+							<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value = "500/-"><del><small>900/-</small></del><br></div>
+						<button type = "submit" class = "btn btn-outline-success" name = "item" value = "GYPSUM">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+						<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "GYPSUM">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form>
+						<div class = "col"> 
+						<div>
+						<img src = "https://mdbiocoals.com/blogs/wp-content/uploads/2022/10/Bio-Organic-Manure.jpg">
+						<div class = "caption">
+							<p><b>ORGANIC MANURE</b><br>
+							Quantity: 2 Kilograms</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="1900/-"><del><small>2000/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "ORGANIC MANURE">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "ORGANIC MANURE">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					<div class = "col"> 
+						<div>
+						<img src = "https://5.imimg.com/data5/SELLER/Default/2020/10/KV/AW/VZ/19090231/07.jpg">
+						<div class = "caption">
+							<p><b>MORCHA</b><br>
+							Quantity: 3 Kilograms</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="1500/-"><del><small>2500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "MORCHA">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "MORCHA">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					</div>
+					<div class = "col"> 
+						<div>
+						<img src = "https://5.imimg.com/data5/SELLER/Default/2020/10/KV/AW/VZ/19090231/07.jpg">
+						<div class = "caption">
+							<p><b>MORCHA</b><br>
+							Quantity: 3 Kilograms</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="1500/-"><del><small>2500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "MORCHA">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "MORCHA">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					</div>
+					<div class = "col"> 
+						<div>
+						<img src = "https://cpimg.tistatic.com/05961334/b/4/Emamectin-Benzoate-5-SG-Insecticide.jpg">
+						<div class = "caption">
+							<p><b>GROWCLAIM</b><br>
+							Quantity: 5 Kilograms</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="2500/-"><del><small>3500/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "GROWCLAIM">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "GROWCLAIM">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					</div>
+					<div class = "col"> 
+						<div>
+						<img src = "https://cpimg.tistatic.com/05961343/b/4/Emamectin-Benzoate-1-9-EC-Insecticide.jpg">
+						<div class = "caption">
+							<p><b>ARMOR</b><br>
+							Quantity: 2 Kilograms</p></div>
+						<form action = "addToCart" method = "GET">COST: <input type = "text" style = "width:50px; font-weight:bold;" name = "cost" value="500/-"><del><small>1000/-</small></del><br></div>
+					<button type = "submit" class = "btn btn-outline-success" name = "item" value = "ARMOR">ADD TO CART <i class = "bi bi-cart4"></i></button></form>
+					<form action = "addToOrders" method = "GET"><button type = "submit" class = "btn btn-outline-success" name = "item" value = "ARMOR">ORDER NOW <i class = "bi bi-basket-fill"></i></button></form></div>
+					</div>
+					
+				<form action = "cart" method = "GET">
+					<center><input type = "submit" class = "btn btn-outline-success" style = "color: white; width:50%; font-weight:bold; background-color: green;" value = "GO TO CART"></center>
+				</form><br><br></div>
+		</body>
+</html>
